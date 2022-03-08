@@ -29,6 +29,14 @@ namespace Line_Comparison_Problem
             {
                 Console.WriteLine("Length are not equal");
             }
+            if (Length_One > Length_Second)
+            {
+                Console.WriteLine("First line is greater than Second line");
+            }
+            else
+            {
+                Console.WriteLine("First line is less than second line");
+            }
         }
     }
 }
