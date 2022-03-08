@@ -1,24 +1,34 @@
-﻿namespace Line_Comparison_Problem
+﻿
+using System;
+
+namespace Line_Comparison_Problem
 {
-
-    public class Example
+    class Program
     {
-
-        static void Main(String[] args)
+        static void Main(string[] args)
         {
-
-            // point 1
             double x1 = 10;
             double y1 = 15;
-
-            // point 2
             double x2 = 30;
             double y2 = 5;
+            double Length_One = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            Console.WriteLine("Length of Line: " + Length_One);
 
-            // Calculate distance between two points
-            double len = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            double x3 = 22;
+            double y3 = 18;
+            double x4 = 13;
+            double y4 = 10;
+            double Length_Second = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));
+            Console.WriteLine("Length of Line: " + Length_Second);
 
-            Console.WriteLine("Length between two points :" + len);
+            if (Length_One == Length_Second)
+            {
+                Console.WriteLine("Length are equal");
+            }
+            else
+            {
+                Console.WriteLine("Length are not equal");
+            }
         }
     }
 }
