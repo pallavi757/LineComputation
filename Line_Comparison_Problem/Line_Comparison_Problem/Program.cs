@@ -5,7 +5,7 @@ namespace Line_Comparison_Problem
 {
     class Program
     {
-        static void Main(string[] args)
+        public void Tocalculate()
         {
             double x1 = 10;
             double y1 = 15;
@@ -38,5 +38,14 @@ namespace Line_Comparison_Problem
                 Console.WriteLine("First line is less than second line");
             }
         }
+
+    
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            p.Tocalculate();
+
+        }
+
     }
 }
